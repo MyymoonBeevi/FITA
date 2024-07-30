@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="2" failed="1" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-03T14:28:39 IST" name="Default suite" finished-at="2024-07-03T14:28:39 IST" duration-ms="153">
+    <groups>
+      <group name="Regression">
+        <method signature="NewTest.Testcase()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="Testcase" class="co.edurekatraining.NewTest"/>
+        <method signature="NewTest.tc1()[pri:1, instance:co.edurekatraining.NewTest@27406a17]" name="tc1" class="co.edurekatraining.NewTest"/>
+        <method signature="NewTest.tc2(java.lang.String,java.lang.String)[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="tc2" class="co.edurekatraining.NewTest"/>
+        <method signature="NewTest.tc3()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="tc3" class="co.edurekatraining.NewTest"/>
+        <method signature="NewTest.tc4()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="tc4" class="co.edurekatraining.NewTest"/>
+        <method signature="NewTest.tc5()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="tc5" class="co.edurekatraining.NewTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="NewTest.tc3()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="tc3" class="co.edurekatraining.NewTest"/>
+      </group> <!-- Smoke -->
+      <group name="Default">
+        <method signature="NewTest.tc4()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="tc4" class="co.edurekatraining.NewTest"/>
+        <method signature="NewTest.tc5()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" name="tc5" class="co.edurekatraining.NewTest"/>
+      </group> <!-- Default -->
+    </groups>
+    <test started-at="2024-07-03T14:28:39 IST" name="Default test" finished-at="2024-07-03T14:28:39 IST" duration-ms="153">
+      <class name="co.edurekatraining.NewTest">
+        <test-method is-config="true" signature="bef()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="bef" finished-at="2024-07-03T14:28:39 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bef -->
+        <test-method is-config="true" signature="beforegroup()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="beforegroup" finished-at="2024-07-03T14:28:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforegroup -->
+        <test-method signature="Testcase()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="Testcase" finished-at="2024-07-03T14:28:39 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase -->
+        <test-method signature="tc1()[pri:1, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="tc1" finished-at="2024-07-03T14:28:39 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method signature="tc2(java.lang.String,java.lang.String)[pri:0, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="tc2" finished-at="2024-07-03T14:28:39 IST" depends-on-methods="co.edurekatraining.NewTest.tc1" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Para1' is required by @Test on method tc2 but has not been marked @Optional or defined
+in C:\Users\guruv\AppData\Local\Temp\testng-eclipse--444003565\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Para1' is required by @Test on method tc2 but has not been marked @Optional or defined
+in C:\Users\guruv\AppData\Local\Temp\testng-eclipse--444003565\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method signature="tc3()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="tc3" finished-at="2024-07-03T14:28:39 IST" depends-on-methods="co.edurekatraining.NewTest.tc2, co.edurekatraining.NewTest.tc1" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method co.edurekatraining.NewTest.tc3() on instance co.edurekatraining.NewTest@27406a17 depends on not successfully finished methods 
+[co.edurekatraining.NewTest.tc2() on instance co.edurekatraining.NewTest@27406a17
+co.edurekatraining.NewTest.tc1() on instance co.edurekatraining.NewTest@27406a17]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method co.edurekatraining.NewTest.tc3() on instance co.edurekatraining.NewTest@27406a17 depends on not successfully finished methods 
+[co.edurekatraining.NewTest.tc2() on instance co.edurekatraining.NewTest@27406a17
+co.edurekatraining.NewTest.tc1() on instance co.edurekatraining.NewTest@27406a17]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method signature="tc4()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="tc4" finished-at="2024-07-03T14:28:39 IST" depends-on-methods="co.edurekatraining.NewTest.tc2, co.edurekatraining.NewTest.tc1" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method co.edurekatraining.NewTest.tc4() on instance co.edurekatraining.NewTest@27406a17 depends on not successfully finished methods 
+[co.edurekatraining.NewTest.tc2() on instance co.edurekatraining.NewTest@27406a17
+co.edurekatraining.NewTest.tc1() on instance co.edurekatraining.NewTest@27406a17]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method co.edurekatraining.NewTest.tc4() on instance co.edurekatraining.NewTest@27406a17 depends on not successfully finished methods 
+[co.edurekatraining.NewTest.tc2() on instance co.edurekatraining.NewTest@27406a17
+co.edurekatraining.NewTest.tc1() on instance co.edurekatraining.NewTest@27406a17]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc4 -->
+        <test-method signature="tc5()[pri:0, instance:co.edurekatraining.NewTest@27406a17]" started-at="2024-07-03T14:28:39 IST" name="tc5" finished-at="2024-07-03T14:28:39 IST" depends-on-methods="co.edurekatraining.NewTest.tc2, co.edurekatraining.NewTest.tc1" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method co.edurekatraining.NewTest.tc5() on instance co.edurekatraining.NewTest@27406a17 depends on not successfully finished methods 
+[co.edurekatraining.NewTest.tc2() on instance co.edurekatraining.NewTest@27406a17
+co.edurekatraining.NewTest.tc1() on instance co.edurekatraining.NewTest@27406a17]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method co.edurekatraining.NewTest.tc5() on instance co.edurekatraining.NewTest@27406a17 depends on not successfully finished methods 
+[co.edurekatraining.NewTest.tc2() on instance co.edurekatraining.NewTest@27406a17
+co.edurekatraining.NewTest.tc1() on instance co.edurekatraining.NewTest@27406a17]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc5 -->
+      </class> <!-- co.edurekatraining.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
